@@ -34,6 +34,14 @@ nav ul li a {
     text-decoration: none;
     display: block;
  }
+ div {
+    /*float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  */
+    /*background: linear-gradient(DeepSkyBlue, Black);*/
+}
 h1 {
     font-size: 15pt;
     color: #20bcd5;
