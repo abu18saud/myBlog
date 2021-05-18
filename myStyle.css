@@ -194,3 +194,49 @@ input, textarea {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
     height: 40px;
 }
+#parent p:first-child {
+    color: green;
+    text-decoration: underline;
+}
+p::first-line {
+    color: #589432;
+}
+p::-moz-selection {
+    background: #8bc34a;
+    color: #fff;
+}
+p::selection {
+    background: #8bc34a;
+    color: #fff;
+    word-wrap: break-word;
+}
+p::before {
+    content: url("http://www.sololearn.com/images/bullet.jpg");
+}
+p::first-line {
+    font-family: "test";
+}
+/*
+@font-face {
+  font-family: Delicious; 
+  src: url('Delicious-Roman.otf'); 
+} 
+@font-face { 
+  font-family: Delicious; 
+  font-weight: bold; 
+  src: url('Delicious-Bold.otf'); 
+}
+h1{
+   font-family: Delicious, sans-serif; 
+}
+
+
+Internet Explorer has a built-in bug when multiple @font-face rules are defined.
+Using #iefix as shown below fixes the problem:
+
+@font-face { 
+   font-family: Delicious; 
+   src: url('Delicious-Roman.ttf');
+   src: url('Delicious-Roman.eot?#iefix'); 
+}
+*/
