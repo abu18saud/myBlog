@@ -40,8 +40,70 @@ nav ul li a {
     height: 100px;
     margin: 4px;
     color: #FFF;  */
-    /*background: linear-gradient(DeepSkyBlue, Black);*/
+    /*background: linear-gradient(DeepSkyBlue, Black);
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  
+    background: linear-gradient(blue, yellow, green, pink, white);
+    In addition to percentages, you can also use px, em, and so on, to specify the color stops.
+If you use the same color stop position for two colors, a sharp line will be created between them.
+    background: linear-gradient(blue 20%, yellow 30%, green 85%);
+    background: linear-gradient(red 20%, green 20%, green 80%, blue 80%);
+
+    */
+
 }
+/* Direction of the Gradient */
+div.first {
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  
+    background:-webkit-linear-gradient(left, blue, green, white);
+    background:-moz-linear-gradient(left, blue, green, white);
+    background:-ms-linear-gradient(left, blue, green, white);
+} 
+div.second { 
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    background:-webkit-linear-gradient(bottom, blue, green, white);
+    background:-moz-linear-gradient(bottom, blue, green, white);
+    background:-ms-linear-gradient(bottom, blue, green, white);
+}
+/*Angle of the Gradient*/
+div.first {
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;
+    background: -webkit-linear-gradient(bottom left, blue, green, white);
+    background: -moz-linear-gradient(bottom left, blue, green, white);
+    background: -ms-linear-gradient(bottom left, blue, green, white);
+}
+div.second {
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    background: -webkit-linear-gradient(100deg, blue, green, white);
+    background: -moz-linear-gradient(100deg, blue, green, white);
+    background: -ms-linear-gradient(100deg, blue, green, white);
+}
+/*Repeating a Linear-Gradient*/
+/*div {
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;
+    background: repeating-linear-gradient(blue, green 20px);
+}*/
 h1 {
     font-size: 15pt;
     color: #20bcd5;
