@@ -3,12 +3,37 @@ html {
     padding: 0;
 }
 body {
+    background:url("http://www.sololearn.com/images/bg2.jpg");
     font-family: 'Handlee', cursive;
     font-size: 13pt;
     background-color: #efefef;
     padding: 10px;
     margin: 0;
 }
+nav {
+    padding: 50px 0;
+    min-width: 500px; 
+}
+nav ul {
+    background: Linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    padding: 10px; 
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+ }
 h1 {
     font-size: 15pt;
     color: #20bcd5;
@@ -19,6 +44,7 @@ h1 {
 h1 span {
     border: 4px dashed #20bcd5;
     padding: 10px;
+    /*text-shadow: 5px 10px 2px #93968f, -3px 6px 5px #58d1e3;*/
 }
 p {
     padding: 0;
@@ -32,7 +58,8 @@ p {
     background-color: #fff;
     padding: 15px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 0 20px 10px 15px;
+    box-shadow: inset 10px 10px 5px #888888, inset -10px -10px 5px #888888, -10px -10px 5px -5px #888888, 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6;
 }
 #header {
     background-image: url("https://www.sololearn.com/Uploads/header.jpg");
@@ -160,4 +187,10 @@ input, textarea {
     text-align: right;
     padding-bottom: 10px;
     color: grey;
+}
+#footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
+    height: 40px;
 }
