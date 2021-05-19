@@ -318,7 +318,7 @@ div.firstRadial {
     background: -webkit-radial-gradient(green, yellow, blue);
     background: -ms-radial-gradient(green, yellow, blue);
 }
-div.secondradial {
+div.secondRadial_ {
     height: 150px;
     width: 200px;
     color: #FFF;
@@ -326,7 +326,7 @@ div.secondradial {
     background: -webkit-radial-gradient(circle, green, yellow, blue); 
     background: -ms-radial-gradient(circle, green, yellow, blue); 
 }
-div.thirdRadial {
+div.thirdRadial_ {
     height: 150px;
     width: 200px;
     color: #FFF;
@@ -341,4 +341,21 @@ div.fourthRadial {
     background: -moz-radial-gradient(green 5%, yellow 15%, blue 60%); 
     background: -webkit-radial-gradient(green 5%, yellow 15%, blue 60%); 
     background: -ms-radial-gradient(green 5%, yellow 15%, blue 60%); 
+}
+div.fifthRadial {
+    height: 150px;
+    width: 200px;
+    color: #FFF;
+    background: -moz-radial-gradient(circle, green 40%, yellow 50%, blue 70%); 
+    background: -webkit-radial-gradient(circle, green 40%, yellow 50%, blue 70%); 
+    background: -ms-radial-gradient(circle, green 40%, yellow 50%, blue 70%); 
+    /*background: radial-gradient(circle, black 20px, red 70px);*/
+}
+div.backgroundSize_ {
+    height: 150px;
+    width: 200px;
+    border: 1px solid #000;
+    background: url("http://www.sololearn.com/uploads/css_logo.png") no-repeat 50% 50%;
+    background-size: 100px 100px;
+    background-size: contain;
 }
