@@ -359,6 +359,10 @@ div.backgroundSize_ {
     background-size: 100px 100px;
     background-size: contain;
 }
+#Quiz_Q_2{
+    background: radial-gradient(50px 50px, red 15px, blue 25px);
+}
+
 #first {
     border: 2px dotted black;
     padding: 20px;
@@ -391,3 +395,26 @@ div.backgroundSize_ {
     background-position: right bottom, left top;
     background-repeat: no-repeat;
 } 
+#Multiple_Backgrounds_2 {
+    background: url("http://www.sololearn.com/uploads/css_logo.png") right top no-repeat, 
+    url("http://www.sololearn.com/uploads/better-code.jpg") left top no-repeat; 
+    width: 400px;
+    height: 300px;
+}
+
+#img1 {
+    opacity: 1;
+}
+#img2 {
+    opacity: 0.5;
+}
+#img3 {
+    opacity: 0.25;
+}
+/* Opacity in Internet Explorer
+The alpha filter is a Microsoft-only property, not a standard CSS property.
+*/
+#img4 {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
