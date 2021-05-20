@@ -371,3 +371,23 @@ div.backgroundSize_ {
     background: LightBlue;
     background-clip: content-box;
 }
+
+#Transparent_Borders_with_background_clip{
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    -moz-background-clip: padding-box; 
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; 
+    width:200px;
+    position:absolute;
+    top:50px;
+    left:50px;
+    background-color:white;
+}
+
+#Multiple_Backgrounds{
+    width: 400px;
+    height: 300px;
+    background-image: url("http://www.sololearn.com/uploads/css_logo.png"), url("http://www.sololearn.com/uploads/better-code.jpg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+} 
