@@ -689,3 +689,50 @@ div.scale_second {
     from { width: 0px; }
     to { width: 100px; }
 }
+/* 3D Transforms */
+#_3D_Transforms_X {
+    width:250px;
+    height:100px;
+    color:white;
+    background-color:green;
+    transform: rotateX(150deg);/* You can switch off all transformations applied to an element using the none function: transform: none; */
+    -webkit-transform: rotateX(150deg);
+}
+#_3D_Transforms_Y {
+    width:250px;
+    height:100px;
+    color:white;
+    background-color:green;
+    transform: rotateY(150deg);
+    -webkit-transform: rotateY(150deg);
+}
+#_3D_Transforms_Z {
+    width:250px;
+    height:100px;
+    color:white;
+    background-color:green;
+    transform: rotateZ(150deg);
+    -webkit-transform: rotateZ(150deg);
+}
+/*
+Like the translate3d() method, there are also scale3d() and rotate3d(), which are applicable for scaling and rotating elements in 3D.
+
+Translation of an element is similar to relative positioning - it doesn't affect the document's flow. The translated element will keep its position in the flow and will only appear to have moved.
+*/
+#Translations_3D {
+    transform: translateX(29px) translateY(5em) translateZ(500px);
+    -webkit-transform: translateX(29px) translateY(5em) translateZ(-13px);
+    width:250px;
+    height:100px;
+    color:white;
+    background-color:green;
+}
+#Translations_3D_shortcut {
+    transform: translate3d(-20px, 4em, 10px);
+    -webkit-transform: translate3d(-20px, 4em, 10px);
+    width:250px;
+    height:100px;
+    color:white;
+    background-color:green;
+}
+
