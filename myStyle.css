@@ -787,5 +787,13 @@ https://t.me/CsharpAbdullahAlsalem/97
 }
 
 .filteredGrayscale {
-    filter: grayscale(50%);/* Any negative value leaves the image unchanged.*/
+    filter: grayscale(100%);/* Any negative value leaves the image unchanged.*/
   }
+
+  .filteredSepia {/*This is similar to using grayscale but with a reddish-brown color tone.*/
+    filter: sepia(50%);/*0% is normal*/
+  }
+  
+  .filteredSaturate {
+    filter: saturate(50%);/* 0% creates a completely unsaturated image (grayscale), whereas 100% is the original image */
+    } 
