@@ -757,6 +757,8 @@ div.green-div {
     -webkit-transform: rotateX(45deg);
 }
 /*
+Fill in the blanks to make the first letter of the paragraph red and bold. Also, flip the paragraph upside down.
+
 p{
 transform: rotate(180deg)
 }
@@ -766,7 +768,24 @@ p::first-letter
     color: red;
     font-weight: bold;
 }
-
-
 */
 
+/* 
+CSS Filters
+https://t.me/CsharpAbdullahAlsalem/97
+*/
+.dropshadow-img {
+    width: 130px;
+    height: 100px;
+}
+.dropshadow {
+    width: 130px;
+    height: 100px;
+    /*  filter: drop-shadow(5px 9px 2px red); تمرين */
+    filter: drop-shadow(5px 9px 2px blue);/* Positive values create the shadow to the right and below the image. */
+    -webkit-filter: drop-shadow(5px 9px 2px blue);/* Negative width and height values create the shadow above and to the left of the image.*/
+}
+
+.filteredGrayscale {
+    filter: grayscale(50%);/* Any negative value leaves the image unchanged.*/
+  }
