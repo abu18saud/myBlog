@@ -794,6 +794,115 @@ https://t.me/CsharpAbdullahAlsalem/97
     filter: sepia(50%);/*0% is normal*/
   }
   
-  .filteredSaturate {
+.filteredSaturate {/* The saturate function also accepts values over 100%. */
     filter: saturate(50%);/* 0% creates a completely unsaturated image (grayscale), whereas 100% is the original image */
-    } 
+} 
+.filtered-super-saturated{
+    filter: saturate(2.5);/* Here is an example using a number value to make an image super-saturated*/
+}
+
+.filtered-hue-rotate {/* https://t.me/CsharpAbdullahAlsalem/98 */
+    filter: hue-rotate(180deg);/* 0 and 360deg rotations leave the image unchanged. */
+    /* filter: hue-rotate(80deg); */
+ }
+ /* The invert function inverts the colors of an image to make dark areas bright and bright areas dark.*/
+ /* The function takes the proportion of the conversion as its parameter. */
+ /* The parameter can be either a percentage value or a number. */
+ /* 0%invert leaves the image unchanged, whereas 100% creates a completely inverted image that is similar to a photographic negative. */
+ /* Here is an example using a percentage value to make the image partially inverted */
+ /* The specification allows values over 100%, but that will have no further effect on the image. */
+ .invertFiltered {
+    /*filter: invert(100%);*/
+    /*Fill in the blanks to change the saturation of an image by 55% and partially invert it.*/
+    filter: saturate(55%) invert(70%)
+  }
+
+  /* The opacity Function */
+  /* The opacity function sets the opacity of an image to change its transparency. */
+  /* 0% opacity creates a completely transparent image, whereas 100% is the original image. */
+  .opacityFiltered {
+    filter: opacity(70%);
+  }
+  /* The brightness Function */
+/* 
+The brightness(amount) function adjusts the brightness of an image, making it appear brighter or darker.
+The amount parameter determines the brightness level of the image. The parameter can take either a percentage value or a number.
+A value of 0% results in an image that is completely black.
+A value of 100% results in an image that is unchanged.
+Any amount over 100% produces a brighter image.
+
+A value under 100% darkens the image, while a value over 100% brightens it.
+A number value of 0.5 has the same effect as the percentage value of 50%. A value of 1 is the same as 100%.
+Any negative value will make the image black.
+*/
+.brightnessFiltered {
+    filter: brightness(200%);
+    /* Here is an example using a number value to make the image brighter: */
+    filter: brightness(1.9);
+    border-radius: 50%;
+  }
+
+  /* The contrast Function */
+/*
+The contrast function adjusts the contrast of the image.
+The amount parameter can take either a percentage value or a number.
+A value under100%decreases the contrast, while a value over 100% increases it.
+A value of 0% will create an image that is completely gray, while a value of 100% leaves the image unchanged.
+The value 0.5 corresponds to 50%, while 1 is the same as 100%.
+Any negative value leaves the image unchanged.
+*/
+.contrastFiltered {
+    filter: contrast(4%);
+ }
+ /* The blur Function */
+ /*
+The blur function applies a blur effect to an image.
+The blur function has only one parameter, radius, which defines how many pixels on the screen blend into each other. (a larger value creates more blur).
+** The parameter is specified as a CSS length, but does not accept percentage values. **
+If no parameter is provided, then the default value 0 is used, which leaves the image unchanged.
+
+ */
+
+ .blured {
+    filter:blur(5px);
+      /*  Both have no effect on the picture*/
+  blur();  /* If no parameter is provided, then a value 0 is used.*/
+  blur(0); /* A value of 0 leaves the input unchanged.*/
+  }
+
+  /* Using Multiple CSS Filters */
+/* Multiple CSS filters can be used together by separating them with spaces. */
+
+.filteredUsingMultiple {
+    filter: blur(5px) hue-rotate(180deg);
+}
+
+.filteredUsingMultiple_2 {
+    filter:  saturate(30%) drop-shadow(5px 9px 2px gray) blur(1px);
+}
+
+/* Another example from the 19th century: */
+.filteredUsingMultiple_3 {
+    filter:  brightness(150%) sepia(100%);
+  }
+
+#avatar {
+    filter: saturate(30%) drop-shadow(5px 9px 2px gray) blur(1px);
+    border-radius: 50%;    
+}
+/* Fill in the blanks to create an image which is completely grayscale and has a grey shadow effect. */
+.completely_grayscale_and_has_a_grey_shadow {
+    filter: grayscale(100%)
+    drop-shadow(5px 9px 2px gray);           
+}
+/* Fill in the blanks to adjust the brightness of an image to 110% and apply a blur effect to it. */
+.blur_and_brightness {
+    filter: blur(5px) brightness(110%);    
+}
+/* Fill in the blanks to make the image circled and blurred with 30% sepia applied. */
+.circled_and_blurred{
+border-radius: 50%;
+filter: sepia(30%) drop-shadow(5px 9px 2px red) blur(1px);
+width: 100px;
+height: 100px;
+}
